@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c1a23ee426.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <iframe src="marian-design/index.html" frameborder="0"></iframe>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    <section class="welcome" id="slide1">
+        <div class="content">
+            <h1>WELCOME</h1>
+            <h2>We are <em><strong>Marian</strong></em> and <em><strong>Jon</strong></em></h2>
+        </div>
+        <a href="#slide2"><button>next</button></a>
+    </section>
+    <section class="agenda" id="slide2">
+        <div class="content">
+            <h1>Agenda</h1>
+            
+            <h2>Week Summary</h2>
+            <!-- Montag, Dienstag: Wir haben uns ein technisches grundgerüst gebaut auf den wir dann alles aufgebaut haben.  -->
+            <!-- Dienstag bis Donnerstag: Haben wir uns den code aufgeteilt und 2 verschiedene Designs ausprobiert -->
+            <h2>How we did it</h2>
+            <!-- We zeigen die API, die eigentlich alles kann -->
+            <!-- und was wir uns geholt haben und gerendert haben (stadt, temperature, condition, icon) -->
+            <!-- von die pexels API haben wir uns einen bild geholt, erwähnen dass man keine Kontrolle über das bild hat weil es immer das erste bild ist was extrahiert wird nach den Fetchen -->
+            <h2>Challenges and Obstacles</h2>
+            <!-- Beim fetchen von manche städtebilder, haben wir das problem dass pexels die nicht hat. wir haben es aber NOCH nicht herausgefunden wie wir den "corrected query" umgehen können und einen default bild rendern -->
+            <!-- dadurch dass wir die base functionality zusammen gemacht haben und dann 2 verschiedene UX/UI designs separiert haben. hat jeder von uns seine eigene hindernisse gefunden. das bedeutet wir haben doppelt so viele challenges gehabt. -->
+            <h2>Live Showcase</h2>
+        </div>
+        <div class="links">
+            <a href="#slide1"><button class="back"><i class="fa-solid fa-arrow-left"></i></button></a>
+            <a href="#slide3"><button>next</button></a>
+
+        </div>    </section>
+    <section class="game" id="slide3">
+        <div class="content">
+            <h1>Week Summary</h1>
+            <p><strong>Monday - Tuesday:</strong></p>
+            <p class="copy">We built the basic functionality for getting the API data and displaying it on the browser</p>
+            <p><strong>Tuesday - Thursday:</strong></p>
+            <p class="copy">We cloned the code in two branches and each of us modified the code to be a different version of the same widget.</p>
+        </div>
+        <div class="links">
+            <a href="#slide2"><button class="back"><i class="fa-solid fa-arrow-left"></i></button></a>
+            <a href="#slide4"><button>next</button></a>
+
+        </div>    </section>
+    <section class="code-1" id="slide4">
+        <div class="content">
+            <h1>How we did it</h1>
+            <div class="APIs">
+                <div class="weatherAPIcontent">
+                    <img src="https://cdn.weatherapi.com/v4/images/weatherapi_logo.png" alt="API logo">
+                    <h3>What you can get</h3>
+                    <div class="collected">
+                        <h3>What we collected</h3>
+                        <ul>
+                            <li>City and Country names</li>
+                            <li>Weather condition with Icon</li>
+                            <li>Temperature</li>
+                        </ul>
+                    </div>
+    
+                </div>
+                <div class="pexelsAPIcontent">
+                    <img src="https://help.pexels.com/hc/en-us/article_attachments/900006864786/Logo_on_Transparent.png" alt="API logo">
+                    <div class="collected">
+                        <h3>What we collected</h3>
+                        <ul>
+                            <li>Photo Collection of the search query</li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <a href="#slide3"><button class="back"><i class="fa-solid fa-arrow-left"></i></button></a>
+            <a href="#slide5"><button>next</button></a>
+
+        </div>    </section>
+    <section class="code-2" id="slide5">
+        <div class="content">
+            <div>
+                <h1>Challenges and Obstacles</h1>
+                <img src="assets/img/pexelsFetch.png" alt="">
+                
+            </div>
+        </div>
+        <div class="links">
+            <a href="#slide4"><button class="back"><i class="fa-solid fa-arrow-left"></i></button></a>
+            <a href="#slide6"><button>next</button></a>
+
+        </div>
+    </section>
+    <section class="live" id="slide6">
+        <div class="content">
+            <h1>Live Showcase</h1>
+        </div>
+        <a href="#slide1"><button>Back to Top</button></a>
+    </section>
+    <button class="toggle-view">Weather</button>
+    <div id="root" class="hidden"></div>
+</body>
+</html>
