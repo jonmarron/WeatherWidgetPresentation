@@ -257,7 +257,7 @@ const renderWeatherInfo = () => {
   cityName.innerHTML = `${cityValue}, ${countryValue}`;
   temperature.innerHTML = `${tempValue}°`;
   sky.innerHTML = `${weatherConditionValue}`;
-  weatherIcon.setAttribute("src", iconSRC);
+  weatherIcon.setAttribute("src", `http:${iconSRC}`);
 }
 
 //Construct favCities Array and render favBookmarks
@@ -270,7 +270,7 @@ const renderFav = () => {
     favCities[cityCounter-1] = cityValue;
     for(let i=0; i<favCities.length; i++) {
       if (favCities[i] === cityValue) {
-        favContainer[cityCounter-1].innerHTML = `<div>${cityValue}<img src="${iconSRC}"></div>`;
+        favContainer[cityCounter-1].innerHTML = `<div>${cityValue}<img src="http:${iconSRC}"></div>`;
       }
     }
     if (favCities.includes(cityValue)) {

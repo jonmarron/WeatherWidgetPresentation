@@ -132,7 +132,7 @@ const renderWeather = (icon, city, country, temperature, condition) => {
           </div>
           <div class="weather-info" >
               <div class="icon">
-                  <img src="${icon}" alt="" />
+                  <img src="https:${icon}" alt="" />
               </div>
               <div class="info">
                   <p id="city">${city}, ${country}</p>
@@ -151,7 +151,7 @@ const favCities = [];
 // Function to pass the html code of every fav
 const renderFav = (city, index) => {
   return `<div class="favourite">
-            <img src="${city.icon}" alt="">
+            <img src="https:${city.icon}" alt="">
             <p>${city.name}, ${city.country} - ${city.temperature}°C - ${city.condition}</p>
             <i class="fa-solid fa-trash" id ="${index}"></i>
           </div>`

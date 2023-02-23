@@ -129,8 +129,13 @@ ul {
 }
 
 .live {
-  background-color: blanchedalmond;
-
+  background-image: url('assets/img/ezgif.com-resize.png');
+  background-position: center;
+  background-size: cover;
+  color: #eeeeee;
+}
+.live h1 {
+  filter: drop-shadow(0 0 10px #2b2b2b);
 }
 .links {
   width: 10%;
