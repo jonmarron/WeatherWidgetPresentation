@@ -270,7 +270,7 @@ const renderFav = () => {
     favCities[cityCounter-1] = cityValue;
     for(let i=0; i<favCities.length; i++) {
       if (favCities[i] === cityValue) {
-        favContainer[cityCounter-1].innerHTML = `<div>${cityValue}<img src="http:${iconSRC}"></div>`;
+        favContainer[cityCounter-1].innerHTML = `<div style = "display:flex; flex-direction:column; align-items:center;">${cityValue}<img src="http:${iconSRC}"></div>`;
       }
     }
     if (favCities.includes(cityValue)) {
